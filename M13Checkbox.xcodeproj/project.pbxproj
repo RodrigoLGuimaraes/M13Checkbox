@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		055FBAB621EE0F94002BAB35 /* M13Checkbox+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055FBAB421EE0F3B002BAB35 /* M13Checkbox+Rx.swift */; };
 		1746F21A1F30C9D7005060B9 /* DefaultValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746F2191F30C9D7005060B9 /* DefaultValues.swift */; };
 		43242B551DA7BC1100C6AF91 /* M13CheckboxAddRemovePathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43242B541DA7BC1100C6AF91 /* M13CheckboxAddRemovePathGenerator.swift */; };
 		43242B561DA7C2CC00C6AF91 /* M13CheckboxFillController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3591421CAC1F12000FBA3B /* M13CheckboxFillController.swift */; };
@@ -20,6 +21,7 @@
 		43BDF4E21DA672EA005476B2 /* M13CheckboxCheckPathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BDF4E11DA672EA005476B2 /* M13CheckboxCheckPathGenerator.swift */; };
 		43BDF4E31DA67304005476B2 /* M13CheckboxPathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BDF4DE1DA67211005476B2 /* M13CheckboxPathGenerator.swift */; };
 		43BDF4E51DA6751C005476B2 /* M13CheckboxRadioPathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BDF4E41DA6751C005476B2 /* M13CheckboxRadioPathGenerator.swift */; };
+		6BC6EFBAD23A849B36E9011D /* Pods_M13Checkbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 142C71FD96ACA2685D246CF8 /* Pods_M13Checkbox.framework */; };
 		C8A9C7D6B9A456341E134B9F /* Pods_M13Checkbox_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792FB031E2B87AC7363ACC0A /* Pods_M13Checkbox_Demo.framework */; };
 		CEAFCBF6201FC46900178C16 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = CEAFCBF5201FC46900178C16 /* Readme.md */; };
 		EA1528991C90653D00EE5115 /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1528981C90653D00EE5115 /* ColorCollectionViewCell.swift */; };
@@ -72,6 +74,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		055FBAB421EE0F3B002BAB35 /* M13Checkbox+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "M13Checkbox+Rx.swift"; sourceTree = "<group>"; };
 		142C71FD96ACA2685D246CF8 /* Pods_M13Checkbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_M13Checkbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1746F2191F30C9D7005060B9 /* DefaultValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultValues.swift; sourceTree = "<group>"; };
 		43242B541DA7BC1100C6AF91 /* M13CheckboxAddRemovePathGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = M13CheckboxAddRemovePathGenerator.swift; path = Sources/Paths/M13CheckboxAddRemovePathGenerator.swift; sourceTree = SOURCE_ROOT; };
@@ -137,6 +140,7 @@
 			files = (
 				EA96F9061CBEB4EC0066C6B7 /* CoreGraphics.framework in Frameworks */,
 				EA96F9041CBEB4E70066C6B7 /* UIKit.framework in Frameworks */,
+				6BC6EFBAD23A849B36E9011D /* Pods_M13Checkbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +240,7 @@
 				EAA0983C1CA8BE7F001AAF6E /* Controllers */,
 				EA6720301C7DFC3D008054BA /* M13Checkbox+IB.swift */,
 				1746F2191F30C9D7005060B9 /* DefaultValues.swift */,
+				055FBAB421EE0F3B002BAB35 /* M13Checkbox+Rx.swift */,
 			);
 			name = Source;
 			path = M13Checkbox;
@@ -301,7 +306,6 @@
 				EA6720131C7D0296008054BA /* Frameworks */,
 				EA6720141C7D0296008054BA /* Resources */,
 				3AE30ADBBC1FF6B62D2D7432 /* [CP] Embed Pods Frameworks */,
-				7D35D6D2E4983E7515358555 /* [CP] Copy Pods Resources */,
 				EA9F61E91D9BFF3D0015D68E /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -318,6 +322,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA96F9001CBEB4CC0066C6B7 /* Build configuration list for PBXNativeTarget "M13Checkbox" */;
 			buildPhases = (
+				94487CF3F7EA30DE2A5176F2 /* [CP] Check Pods Manifest.lock */,
 				EA96F8F61CBEB4CC0066C6B7 /* Sources */,
 				EA96F8F71CBEB4CC0066C6B7 /* Frameworks */,
 				EA96F8F81CBEB4CC0066C6B7 /* Headers */,
@@ -420,30 +425,39 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-M13Checkbox Demo/Pods-M13Checkbox Demo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Color-Picker-for-iOS/Color_Picker_for_iOS.framework",
 				"${BUILT_PRODUCTS_DIR}/PBDCarouselCollectionViewLayout/PBDCarouselCollectionViewLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Color_Picker_for_iOS.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PBDCarouselCollectionViewLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-M13Checkbox Demo/Pods-M13Checkbox Demo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7D35D6D2E4983E7515358555 /* [CP] Copy Pods Resources */ = {
+		94487CF3F7EA30DE2A5176F2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-M13Checkbox-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-M13Checkbox Demo/Pods-M13Checkbox Demo-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -477,6 +491,7 @@
 				43BDF4E31DA67304005476B2 /* M13CheckboxPathGenerator.swift in Sources */,
 				43242B5B1DA7C7C300C6AF91 /* M13CheckboxFadeController.swift in Sources */,
 				EA96F9081CBEB5190066C6B7 /* M13CheckboxController.swift in Sources */,
+				055FBAB621EE0F94002BAB35 /* M13Checkbox+Rx.swift in Sources */,
 				43242B571DA7C3CA00C6AF91 /* M13CheckboxBounceController.swift in Sources */,
 				EA96F90E1CBEB5190066C6B7 /* M13CheckboxStrokeController.swift in Sources */,
 				43242B561DA7C2CC00C6AF91 /* M13CheckboxFillController.swift in Sources */,
@@ -657,6 +672,7 @@
 		};
 		EA96F9011CBEB4CC0066C6B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 986098FE8EE9379B59F2A8C0 /* Pods-M13Checkbox.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -682,6 +698,7 @@
 		};
 		EA96F9021CBEB4CC0066C6B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43A4CE6E1E64F86D23A4560F /* Pods-M13Checkbox.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
