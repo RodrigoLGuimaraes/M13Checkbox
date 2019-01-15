@@ -32,8 +32,8 @@ Pod::Spec.new do |s|
 
   s.frameworks = 'Foundation', 'UIKit', 'CoreGraphics'
 
-  ss.dependency "RxSwift", '4.4.0'
-  ss.dependency "RxCocoa", '4.4.0'
+  s.dependency "RxSwift", '4.4.0'
+  s.dependency "RxCocoa", '4.4.0'
 
   s.requires_arc = true
   s.swift_version = '4.2'
